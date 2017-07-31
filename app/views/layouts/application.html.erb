@@ -1,14 +1,22 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <!-- Basic Page Needs
+    ================================================== -->
+    <meta charset="utf-8">
     <title>GlossynRails</title>
     <%= csrf_meta_tags %>
+    <meta name="description" content="glossy_n site by draconian">
+	  <meta name="author" content="draconian">
+    <!-- Mobile Specific Metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'true' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'true' %>
   </head>
 
-  <body>
+  <body class="royal_preloader">
     <%= yield %>
   </body>
 </html>
