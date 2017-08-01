@@ -59,3 +59,13 @@
 #     auth_methods: %w(publickey password)
 #     # password: "please use keys"
 #   }
+
+server "52.79.87.190",
+    user: "ec2-user",
+    roles: %{web app db},
+    ssh_options: {
+      user: "ec2-user",
+      keys: %w(/Users/draconian/.ssh/sbcosmetic.pem),
+      forward_agent: false,
+      auth_methods: %w(publickey)
+    }
